@@ -63,7 +63,7 @@ ingress:
             service:
               name: purocoach-crm-backend
               port:
-                number: 3000
+                number: 4000
           path: /
           pathType: ImplementationSpecific
   tls: []
