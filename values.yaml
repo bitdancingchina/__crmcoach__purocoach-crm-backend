@@ -68,7 +68,7 @@ ingress:
           pathType: ImplementationSpecific
   tls:
     - secretName: purocoach-ssl-certificate-secret
-      namespace: frontend-dev
+      namespace: backend-dev
       hosts:
         - api-dev.purocoach.com
 
