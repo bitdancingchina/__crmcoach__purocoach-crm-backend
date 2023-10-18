@@ -66,10 +66,11 @@ ingress:
                 number: 4000
           path: /
           pathType: ImplementationSpecific
-  tls: []
-  #  - secretName: chart-example-tls
-  #    hosts:
-  #      - chart-example.local
+  tls:
+    - secretName: purocoach-ssl-certificate-secret
+      namespace: frontend-dev
+      hosts:
+        - api-dev.purocoach.com
 
 resources: {}
   # We usually recommend not to specify default resources and to leave this as a conscious
